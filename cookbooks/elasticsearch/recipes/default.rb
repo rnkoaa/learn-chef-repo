@@ -31,7 +31,7 @@ service 'elasticsearch' do
     ignore_failure true
 end
 
- cookbook_file "/etc/elasticsearch/elasticsearch.yml" do
+cookbook_file "/etc/elasticsearch/elasticsearch.yml" do
     source "elasticsearch.yml"
     owner "elasticsearch"
     group "elasticsearch"
