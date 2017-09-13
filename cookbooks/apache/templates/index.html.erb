@@ -1,0 +1,10 @@
+<html>
+<head>
+    <title>Created by Chef</title>
+    </head>
+    <body>
+    Hello, from <%= node['fqdn'] %>
+Node Ip Address: <%= node['ipaddress'] %>
+    <p>Total Memory <%= node["memory"]["total"].to_i / 1024 %> MB Memory
+</body>
+</html>
