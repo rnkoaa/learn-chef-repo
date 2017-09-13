@@ -14,7 +14,8 @@
         "recipe[java_se::default]", 
         "recipe[elasticsearch::default]", 
         "recipe[kibana::default]",
-        "recipe[logstash::default]"
+        "recipe[logstash::default]",
+        "recipe[filebeat::default]"
     ],
     "env_run_lists" : {}
  }

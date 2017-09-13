@@ -1,0 +1,18 @@
+filebeat.prospectors:
+- input_type: log
+
+  paths:
+    - <%= node['APP_LOG_DIR'] %>/*.log
+
+  fields:
+    application: <%= node['FIT_APPLICATION_NAME'] %>
+    env: <%= node['FIT_ENV'] %>
+
+  multiline:
+    pattern: '^\d{4}-\d{2}-\d{2}'
+    negate: true
+    match: after
+
+  output:
+    logstash:
+      hosts: ["<%= node['LOGSTASH_HOST']  %>"]

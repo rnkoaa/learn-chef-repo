@@ -39,4 +39,5 @@ end
 
 service 'logstash' do
     action [:enable, :start]
+    supports :restart => true
 end
