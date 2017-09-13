@@ -10,6 +10,11 @@
     },
     "override_attributes" : {},
     "chef_type" : "role",
-    "run_list" : ["recipe[java_se::default]", "recipe[elasticsearch::default]"],
+    "run_list" : [
+        "recipe[java_se::default]", 
+        "recipe[elasticsearch::default]", 
+        "recipe[kibana::default]",
+        "recipe[logstash::default]"
+    ],
     "env_run_lists" : {}
  }

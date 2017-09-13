@@ -31,7 +31,7 @@ cookbook_file "/etc/logstash/logstash.yml" do
 end
 
 remote_directory '/etc/logstash/conf.d' do
-  source 'conf.d'
+  source "conf.d"
   owner "logstash"
   group "logstash"
   action :create
