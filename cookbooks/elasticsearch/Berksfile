@@ -4,4 +4,3 @@ source 'https://supermarket.chef.io'
 metadata
 
 cookbook 'java_se', '~> 8.144.0'
-# cookbook 'elastic-yum-repo', '~> 0.1.0'

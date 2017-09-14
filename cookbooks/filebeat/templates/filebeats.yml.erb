@@ -13,6 +13,6 @@ filebeat.prospectors:
     negate: true
     match: after
 
-  output:
-    logstash:
-      hosts: ["<%= node['FILEBEAT']['LOGSTASH_HOST']  %>"]
+output:
+  logstash:
+    hosts: ["<%= node['FILEBEAT']['LOGSTASH_HOST']  %>"]
