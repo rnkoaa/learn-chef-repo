@@ -4,7 +4,7 @@ maintainer_email 'vagrant@vagrant.com'
 license 'All Rights Reserved'
 description 'Installs/Configures elasticsearch'
 long_description 'Installs/Configures elasticsearch'
-version '0.1.9'
+version '0.1.10'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
