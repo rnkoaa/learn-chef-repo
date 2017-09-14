@@ -1,10 +1,10 @@
-name 'filebeat'
+name 'elastic-yum-repo'
 maintainer 'Richard Agyei'
 maintainer_email 'richard.agyei@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures filebeat'
 long_description 'Installs/Configures Elastic Yum repo on centos systems'
-version '0.1.0'
+version '0.1.1'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
