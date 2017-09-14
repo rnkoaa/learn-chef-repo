@@ -18,7 +18,7 @@ template '/etc/filebeat/filebeat.yml' do
     notifies :restart, "service[filebeat]"
 end
 
-service 'logstash' do
+service 'filebeat' do
    action [:enable, :start]
    supports :restart => true
 end
