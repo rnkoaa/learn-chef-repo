@@ -1,6 +1,6 @@
  {
-    "name": "elasticsearch",
-    "description" : "Elasticsearch role.",
+    "name": "elk",
+    "description" : "ELK role.",
     "json_class" : "Chef::Role",
     "default_attributes" : {
         "chef_client" : {
