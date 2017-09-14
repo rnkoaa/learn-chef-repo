@@ -25,7 +25,7 @@ remote_directory '/etc/logstash/conf.d' do
   source "conf.d"
   owner "logstash"
   group "logstash"
-  action :create
+  # action :create
 end
 
 service 'logstash' do
